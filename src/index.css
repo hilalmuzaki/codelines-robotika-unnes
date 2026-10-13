@@ -1,8 +1,17 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/syne";
+@import "@fontsource-variable/jetbrains-mono";
 
 @theme {
+  /* colors */
   --color-primary: #FF1E27;
   --color-secondary: #E06010;
   --color-tertiary: #847E7E;
   --color-neutral: #080808;
+
+  /* font */
+  --font-headline: "Syne", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "JetBrains Mono", monospace;
 }
