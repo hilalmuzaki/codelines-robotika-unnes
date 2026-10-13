@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import NavLink from "../components/NavLink";
 
 export default function PrimaryNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,69 +33,30 @@ export default function PrimaryNav() {
 
   return (
     <nav ref={navRef}>
-      <div className="w-full bg-green-800 text-white fixed top-0 z-[99999]">
-        <div className="flex justify-between px-4 sm:px-12 lg:px-24 xl:px-48 items-center gap-4">
-          <p className="text-lg font-bold py-3 lg:py-5">
-            <Link to="/" onClick={closeMenu}>
-              Evriwanken
+      <div className="w-full bg-neutral text-white fixed top-0 z-[99999]">
+        <div className="flex justify-between px-4 sm:px-12 lg:px-24 items-center gap-4">
+          <div className="w-fit">
+            <Link to="/" onClick={closeMenu} className="flex w-fit gap-2 items-center py-5">
+              <p className="body-style">ROBOTIKA UNNES</p>
+              <p className="hidden sm:flex label-style">UKM RIPTEK</p>
             </Link>
-          </p>
+          </div>
 
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex items-center gap-[36px] xl:gap-[50px] text-sm">
-            <li className="py-5 hover:cursor-pointer hover:underline underline-offset-[24px] decoration-2 decoration-white">
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  isActive
-                    ? "underline underline-offset-[24px] decoration-2 decoration-white font-semibold"
-                    : ""
-                }
-              >
-                Beranda
-              </NavLink>
-            </li>
-            <li className="py-5 hover:cursor-pointer hover:underline underline-offset-[24px] decoration-2 decoration-white">
-              <NavLink
-                to="/program"
-                className={({ isActive }) =>
-                  isActive
-                    ? "underline underline-offset-[24px] decoration-2 decoration-white font-semibold"
-                    : ""
-                }
-              >
-                Program
-              </NavLink>
-            </li>
-            <li className="py-5 hover:cursor-pointer hover:underline underline-offset-[24px] decoration-2 decoration-white">
-              <NavLink
-                to="/tentang"
-                className={({ isActive }) =>
-                  isActive
-                    ? "underline underline-offset-[24px] decoration-2 decoration-white font-semibold"
-                    : ""
-                }
-              >
-                Tentang
-              </NavLink>
-            </li>
-            <li className="py-5 hover:cursor-pointer hover:underline underline-offset-[24px] decoration-2 decoration-white">
-              <NavLink
-                to="/kontak"
-                className={({ isActive }) =>
-                  isActive
-                    ? "underline underline-offset-[24px] decoration-2 decoration-white font-semibold"
-                    : ""
-                }
-              >
-                Kontak
-              </NavLink>
-            </li>
+            <NavLink to="/tentang" label="ABOUT US" />
+            <NavLink to="/program" label="PROGRAMS" />
+            <NavLink to="/tentang" label="FAQ" />
+            <NavLink to="/kontak" label="CONTACT" />
           </ul>
 
+          {/* get in touch */}
+          <p className="body-style">
+              GET IN TOUCH
+          </p>
+
           {/* Mobile Hamburger Button */}
-          <div className="lg:hidden flex items-center">
+          <div className="hidden items-center">
             <button
               className="items-center flex focus:outline-none"
               type="button"
@@ -151,59 +113,30 @@ export default function PrimaryNav() {
           >
             <div className="absolute flex flex-col w-full top-[51px] bg-green-700 text-lg z-[99998]">
               <ul className="flex flex-col items-center text-sm">
-                <li className="w-full">
-                  <NavLink
-                    to="/"
-                    end
-                    onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `flex w-full py-4 justify-center items-center hover:bg-green-800 ${
-                        isActive ? "bg-green-800 font-semibold" : ""
-                      }`
-                    }
-                  >
-                    Beranda
-                  </NavLink>
-                </li>
-                <li className="w-full">
-                  <NavLink
-                    to="/program"
-                    onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `flex w-full py-4 justify-center items-center hover:bg-green-800 ${
-                        isActive ? "bg-green-800 font-semibold" : ""
-                      }`
-                    }
-                  >
-                    Program
-                  </NavLink>
-                </li>
-                <li className="w-full">
-                  <NavLink
-                    to="/tentang"
-                    onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `flex w-full py-4 justify-center items-center hover:bg-green-800 ${
-                        isActive ? "bg-green-800 font-semibold" : ""
-                      }`
-                    }
-                  >
-                    Tentang
-                  </NavLink>
-                </li>
-                <li className="w-full">
-                  <NavLink
-                    to="/kontak"
-                    onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `flex w-full py-4 justify-center items-center hover:bg-green-800 ${
-                        isActive ? "bg-green-800 font-semibold" : ""
-                      }`
-                    }
-                  >
-                    Kontak
-                  </NavLink>
-                </li>
+                <NavLink
+                  to="/tentang"
+                  label="ABOUT US"
+                  mobile
+                  onClick={closeMenu}
+                />
+                <NavLink
+                  to="/program"
+                  label="PROGRAMS"
+                  mobile
+                  onClick={closeMenu}
+                />
+                <NavLink
+                  to="/tentang"
+                  label="FAQ"
+                  mobile
+                  onClick={closeMenu}
+                />
+                <NavLink
+                  to="/kontak"
+                  label="CONTACT"
+                  mobile
+                  onClick={closeMenu}
+                />
               </ul>
             </div>
           </div>
