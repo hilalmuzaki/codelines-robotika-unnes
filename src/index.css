@@ -15,3 +15,19 @@
   --font-body: "Inter", sans-serif;
   --font-label: "JetBrains Mono", monospace;
 }
+
+@layer components {
+  .headline-style {
+    @apply font-headline font-[800] leading-[1.05] tracking-[-0.02em];
+    text-shadow: 0 0 24px color-mix(in srgb, var(--color-primary) 60%, transparent);
+  }
+
+  .body-style {
+    @apply font-body font-[500] leading-[1.5] tracking-normal text-base;
+  }
+
+  .label-style {
+    @apply font-label font-[600] leading-[1.2] uppercase tracking-[0.04em] text-tertiary;
+    font-variant-numeric: tabular-nums;
+  }
+}
