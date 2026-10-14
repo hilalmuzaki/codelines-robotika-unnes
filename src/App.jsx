@@ -59,7 +59,7 @@ export function App() {
         <Faq content={currentContent} />
 
         {/* Contact Section & Form */}
-        <Contact content={currentContent} />
+        <Contact content={currentContent} lang={lang} />
       </main>
 
       {/* Footer */}

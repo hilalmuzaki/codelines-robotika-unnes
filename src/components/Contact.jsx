@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const Contact = ({ content }) => {
+export const Contact = ({ content, lang = 'id' }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,6 +9,11 @@ export const Contact = ({ content }) => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [fileAttached, setFileAttached] = useState(null);
+
+  const isId = lang === 'id' || content?.contact?.heading?.toLowerCase().includes('kirimkan');
+  const headingWords = content.contact.heading.split(' ');
+  const line1 = headingWords.slice(0, 2).join(' ');
+  const line2 = headingWords.slice(2).join(' ');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,10 +44,13 @@ export const Contact = ({ content }) => {
           <div className="contact-info-column">
             <div>
               <span className="section-label">{content.contact.label}</span>
-              <h2 className="section-heading-huge glow-headline" style={{ marginBottom: 0 }}>
-                {content.contact.heading.split(' ')[0]} {content.contact.heading.split(' ')[1]}
+              <h2
+                className={`section-heading-huge glow-headline contact-heading ${isId ? 'contact-heading-id' : ''}`}
+                style={{ marginBottom: 0 }}
+              >
+                <span className="contact-heading-line">{line1}</span>
                 <br />
-                {content.contact.heading.split(' ').slice(2).join(' ')}
+                <span className="contact-heading-line">{line2}</span>
               </h2>
             </div>
 
