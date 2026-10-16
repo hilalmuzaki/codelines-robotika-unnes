@@ -1,6 +1,15 @@
 // Data content for Robotika UNNES Landing Page
 // Supports both Indonesian (ID) and English (EN)
 
+import avatar1 from "../assets/Robotika/avatar-1.jpg";
+import avatar2 from "../assets/Robotika/avatar-2.jpg";
+import avatar3 from "../assets/Robotika/avatar-3.jpg";
+import heroGathering from "../assets/Robotika/hero-gathering.png";
+import heroHexapod from "../assets/Robotika/hero-hexapod.png";
+import heroKriKrti from "../assets/Robotika/hero-kri-krti.png";
+import heroWorkshop from "../assets/Robotika/hero-workshop.png";
+import logo from "../assets/Robotika/logo.png";
+
 export const contentData = {
   id: {
     nav: {
@@ -19,27 +28,27 @@ export const contentData = {
         {
           id: 1,
           title: "KRI & KRTI Competition Flight Delegation",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCWAs2rNXFLR0EBV6EVziSdND-sHRnXsVFmaH8-hGpCoRk4gSH8QtP0JA15ji8CaJp2ppf_DEV8kPOotoUzdfxiUJfFj_NFFk1fXVr2y4wcCpVrgV_N54DqT97MkbLHhCG09_cRnB0NE7UGXSDQJMlp7A5k088H91grN73XZ1BUGv9pKIIlxG2Ah3tEg8AJlNUoCI4kyKgrjTnVGkgXg-v50Vlm7EZYMwDtXtbRjKKZxJroAAtYMGtEH_ZqFSdK46WuJw",
+          img: heroKriKrti,
           tall: false,
           grayscale: true,
         },
         {
           id: 2,
           title: "Workshop & Pameran Delegasi Robotika UNNES",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBoXuzuNxYO9xgbzY2z4kfvsau0JWPz0eBYerUKA7bMJOI7Cuy054CwgzyLacmdjHULhkjCgvpmtL8EWh9ykEwym9LXeCl8w5uTWTerNgJxfHAS6g5lYP3fJbvNIWC7Ham6czPS5AZ5QOPwY0MBO2idrHpVYt1uwOt18GzKEPCg7wQmDeawSPGhsSuWjlqk0fMAic8HHCO0E9rcyBemeZXzaUHRXxlF180LNyUJhPvFKDVyIbKeFbwsV5TiBcIjrpbRBg",
+          img: heroWorkshop,
           tall: true,
           tintRed: true,
         },
         {
           id: 3,
           title: "Hexapod & Field Robot Prototyping Review",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBCWZ2knJFI0JAGWmdsVqYCf4EMTNfDEBcYpoiNCRFCR9yylcdpYOce9RRhLTuUa0z58nj-mxGl6lgcyshH9JMSzeOPO3ez-6HyTFqEvDKkrmZF2mN1T7lVVthGJiEQTpR5tVjTHg-RJNLaZAVUHwyIqwcTcZxvK0Ab8Maib0N2UFmrKWB-VbHpbLtJSnjEMUJPnNiSWAkBkdPj6hInJLO-DMoUDIRbUPTgTP6OHaTn25ANdbOAQtZF31n-nK75QhZWbg",
+          img: heroHexapod,
           tall: true,
         },
         {
           id: 4,
           title: "Gathering & Konsolidasi Tim Robotika RIPTEK",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuA-OHgiHZdHR1qNpNULhRqd9r_LJAKXkr8cES8yph_tnugWLJo2KY7XtBd7mCMFQV-7gLMyZC87a-WP4Nl8nCEe1V6OU51TI-VELTfM7m1OSxB0QmN1gYGGZjz8WFPtCCPh-9fUL4H8Z2B0IeeD8c657qgtAC8JOfOfySktw7ocIqhKay6py2GgNx7oFwWeGTu0_0J3Uu9JS2cDcU-BMSxHt6COWMJWAB86dnEprz2Nf_Pbm22VdgFY2WUOS2stpkcVMw",
+          img: heroGathering,
           tall: false,
           grayscale: true,
         },
@@ -48,7 +57,7 @@ export const contentData = {
     about: {
       label: "TENTANG KAMI — KREATIVITAS, KEBERANIAN, MASA DEPAN",
       heading: "WADAH TALENTA ROBOTIKA & TEKNOLOGI UNNES",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCqDgFD3ykzTWYT5hbqAkVaPgXJ8HrZMizOn3z3hQcokJxSmpsHV8K9SaoKPAa7OEmoWHGZUFRJ4rgkveHABLft6xTZm84bGfgbwCN0CLOEh60f6KmjRABarHn7jncec0p3IMrtmJv-ghAdmqbEES158siS_18pBf4pKzAZzv9tvHGThPAwniK3qE_iqX8CuBeXE7fs056X5OTzhziZ7Ggf_be-xdnoctnzTgUd8T6tr2rLc26TTLMlWMdvnWSHCOsAyQ",
+      image: heroHexapod,
       visionTag: "TENTANG & VISI",
       description: "Robotika UNNES merupakan sub-organisasi kemahasiswaan yang bernaung di bawah UKM RIPTEK Universitas Negeri Semarang yang berfungsi sebagai inkubator talenta teknologi untuk mencetak inovator, programmer, dan perekayasa unggul. Melalui riset aplikatif dan kompetisi tingkat nasional, anggota menguasai sistem benam (embedded systems), desain mekanikal, kecerdasan buatan, serta otomatisasi perangkat lunak.",
       vision: "VISI: Terwujudnya Komunitas Robotika UNNES yang Inovatif, Kreatif, dan Berprestasi Unggul di Tingkat Nasional.",
@@ -77,9 +86,9 @@ export const contentData = {
       text4: "PRESISI",
       text5: "& KEUNGGULAN",
       avatars: [
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDd-p61Ay1CauUG0uveMuv1uZjI4pipmBGdldwtU3DS15WSme2fQ_8y_eib52jbewaZQQGDw7xzizILdjdm8mWhteoVggNm_JuXHRY6xzcNKiRM-xACKFk0L1C7uR2BZVpObwbeJLOAH1y9Er_8EOEEVUMWJaLI8E1zuNkOAtwiRvws7oEfnpjgiG9SH1NVmYonMRNGX0yuPhpV4npMzexpZ4nQCeVccfqy5A_lAfxZPFRSS1yE1VVktmyHvZ3q_CAmzQ",
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuA11HPXif17bSK9f_3V10zRxCdaq8UjMKmv2sBvHhlFL2WOX5EHKk4I3ASJxfzh1Hx4js1ZTVG0WQLsYcKo_kJ7ceymQ-aQIzxtKNOXaKBQ2MvUJ3PV8GCF-8X_HEnMTylvQgPyJtPn2XQJYisYJXxvS3A9adkrSLWshJ0F33IZZdGKQaM7yJ3JKDZi5bDrN8YEgNPgDRTBJ5nON6ZcrTp2sV3z1eFDDCKCa35xWNR6iyUPG132jbH8WzUGJNyVPrcwng",
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAkFMoAZ0MfGQ4D5F4863m-fhQBw05OhmE0B0AQawV0gHYi7w4kY2NM8Q1DT1eNC1oGj6N6WCfuij-t8yVlSXrQzlPRAeoCBmeGnpbzglelW9K16sHBmoRcBsnEeH54fQYnQvVnFLUes5Uh81vkCD0hNKDPeTYZVT7w1lP9VuLs1NbaovsnTbdOYCQC6VQ0QeVZmyJ5AvltblZOkR2hb_YHdztvbhU_GG4NvHMGAr7Uc7_dQaFSX2v5mBS4gVBYZMT47A",
+        avatar1,
+        avatar2,
+        avatar3,
       ],
     },
     programs: {
@@ -125,7 +134,7 @@ export const contentData = {
       label: "DALAM HANGAR",
       title: "AGRA VIDRAVANA",
       btn: "DETAIL PROYEK",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDf-jTXcN7THycbh4yXv-BalR3i0QPQdpVIcCExHbolLZMb5U397tpBH-Fq3ob7zdJPn8Oqpy7pDexQx2NCZq3uRt0vGEydeZmR6StS1n6DvkeFtStGukCxqo85xLhaUfS8OhlzsUuhLq2lZGHtkvelLI8yIWpsy9xH0FmLuErnv864w7x2o5WuZihA67sjSEzIpP9K_Ze4LYN6vATdsP_mLV__D3ZMoqESrtI6-s57KQ35uvoy-86o90FSiHtLrz-_3Q",
+      img: heroKriKrti,
       caption: "Wahana nirawak taktis otonom dengan transmisi telemetri real-time, navigasi waypoint cerdas, dan struktur komposit serat karbon berkekuatan tinggi.",
       badge: "PROTOTIPE V7 // KELAS KRI & KRTI",
       specs: [
@@ -208,27 +217,27 @@ export const contentData = {
         {
           id: 1,
           title: "KRI & KRTI Competition Flight Delegation",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCWAs2rNXFLR0EBV6EVziSdND-sHRnXsVFmaH8-hGpCoRk4gSH8QtP0JA15ji8CaJp2ppf_DEV8kPOotoUzdfxiUJfFj_NFFk1fXVr2y4wcCpVrgV_N54DqT97MkbLHhCG09_cRnB0NE7UGXSDQJMlp7A5k088H91grN73XZ1BUGv9pKIIlxG2Ah3tEg8AJlNUoCI4kyKgrjTnVGkgXg-v50Vlm7EZYMwDtXtbRjKKZxJroAAtYMGtEH_ZqFSdK46WuJw",
+          img: heroKriKrti,
           tall: false,
           grayscale: true,
         },
         {
           id: 2,
           title: "Robotika UNNES Workshop & Delegation Showcase",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBoXuzuNxYO9xgbzY2z4kfvsau0JWPz0eBYerUKA7bMJOI7Cuy054CwgzyLacmdjHULhkjCgvpmtL8EWh9ykEwym9LXeCl8w5uTWTerNgJxfHAS6g5lYP3fJbvNIWC7Ham6czPS5AZ5QOPwY0MBO2idrHpVYt1uwOt18GzKEPCg7wQmDeawSPGhsSuWjlqk0fMAic8HHCO0E9rcyBemeZXzaUHRXxlF180LNyUJhPvFKDVyIbKeFbwsV5TiBcIjrpbRBg",
+          img: heroWorkshop,
           tall: true,
           tintRed: true,
         },
         {
           id: 3,
           title: "Hexapod & Field Robot Prototyping Review",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBCWZ2knJFI0JAGWmdsVqYCf4EMTNfDEBcYpoiNCRFCR9yylcdpYOce9RRhLTuUa0z58nj-mxGl6lgcyshH9JMSzeOPO3ez-6HyTFqEvDKkrmZF2mN1T7lVVthGJiEQTpR5tVjTHg-RJNLaZAVUHwyIqwcTcZxvK0Ab8Maib0N2UFmrKWB-VbHpbLtJSnjEMUJPnNiSWAkBkdPj6hInJLO-DMoUDIRbUPTgTP6OHaTn25ANdbOAQtZF31n-nK75QhZWbg",
+          img: heroHexapod,
           tall: true,
         },
         {
           id: 4,
           title: "Riptek UNNES Robotics Team Gathering",
-          img: "https://lh3.googleusercontent.com/aida-public/AB6AXuA-OHgiHZdHR1qNpNULhRqd9r_LJAKXkr8cES8yph_tnugWLJo2KY7XtBd7mCMFQV-7gLMyZC87a-WP4Nl8nCEe1V6OU51TI-VELTfM7m1OSxB0QmN1gYGGZjz8WFPtCCPh-9fUL4H8Z2B0IeeD8c657qgtAC8JOfOfySktw7ocIqhKay6py2GgNx7oFwWeGTu0_0J3Uu9JS2cDcU-BMSxHt6COWMJWAB86dnEprz2Nf_Pbm22VdgFY2WUOS2stpkcVMw",
+          img: heroGathering,
           tall: false,
           grayscale: true,
         },
@@ -237,7 +246,7 @@ export const contentData = {
     about: {
       label: "ABOUT US — CREATIVITY, COURAGE, FUTURE",
       heading: "HOME OF ROBOTICS TALENT & TECHNOLOGY AT UNNES",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCqDgFD3ykzTWYT5hbqAkVaPgXJ8HrZMizOn3z3hQcokJxSmpsHV8K9SaoKPAa7OEmoWHGZUFRJ4rgkveHABLft6xTZm84bGfgbwCN0CLOEh60f6KmjRABarHn7jncec0p3IMrtmJv-ghAdmqbEES158siS_18pBf4pKzAZzv9tvHGThPAwniK3qE_iqX8CuBeXE7fs056X5OTzhziZ7Ggf_be-xdnoctnzTgUd8T6tr2rLc26TTLMlWMdvnWSHCOsAyQ",
+      image: heroHexapod,
       visionTag: "ABOUT & VISION",
       description: "Robotika UNNES is a student research sub-organization under UKM RIPTEK Universitas Negeri Semarang serving as an incubator for engineering talent. Through applied prototyping and national competitions, members master embedded systems, mechanical design, artificial intelligence, and automated software workflows.",
       vision: "VISION: To cultivate an innovative, creative, and nationally acclaimed UNNES Robotics Community.",
@@ -266,9 +275,9 @@ export const contentData = {
       text4: "PRECISION",
       text5: "& EXCELLENCE",
       avatars: [
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDd-p61Ay1CauUG0uveMuv1uZjI4pipmBGdldwtU3DS15WSme2fQ_8y_eib52jbewaZQQGDw7xzizILdjdm8mWhteoVggNm_JuXHRY6xzcNKiRM-xACKFk0L1C7uR2BZVpObwbeJLOAH1y9Er_8EOEEVUMWJaLI8E1zuNkOAtwiRvws7oEfnpjgiG9SH1NVmYonMRNGX0yuPhpV4npMzexpZ4nQCeVccfqy5A_lAfxZPFRSS1yE1VVktmyHvZ3q_CAmzQ",
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuA11HPXif17bSK9f_3V10zRxCdaq8UjMKmv2sBvHhlFL2WOX5EHKk4I3ASJxfzh1Hx4js1ZTVG0WQLsYcKo_kJ7ceymQ-aQIzxtKNOXaKBQ2MvUJ3PV8GCF-8X_HEnMTylvQgPyJtPn2XQJYisYJXxvS3A9adkrSLWshJ0F33IZZdGKQaM7yJ3JKDZi5bDrN8YEgNPgDRTBJ5nON6ZcrTp2sV3z1eFDDCKCa35xWNR6iyUPG132jbH8WzUGJNyVPrcwng",
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAkFMoAZ0MfGQ4D5F4863m-fhQBw05OhmE0B0AQawV0gHYi7w4kY2NM8Q1DT1eNC1oGj6N6WCfuij-t8yVlSXrQzlPRAeoCBmeGnpbzglelW9K16sHBmoRcBsnEeH54fQYnQvVnFLUes5Uh81vkCD0hNKDPeTYZVT7w1lP9VuLs1NbaovsnTbdOYCQC6VQ0QeVZmyJ5AvltblZOkR2hb_YHdztvbhU_GG4NvHMGAr7Uc7_dQaFSX2v5mBS4gVBYZMT47A",
+        avatar1,
+        avatar2,
+        avatar3,
       ],
     },
     programs: {
@@ -314,7 +323,7 @@ export const contentData = {
       label: "ON HANGAR",
       title: "AGRA VIDRAVANA",
       btn: "ABOUT PROJECT",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDf-jTXcN7THycbh4yXv-BalR3i0QPQdpVIcCExHbolLZMb5U397tpBH-Fq3ob7zdJPn8Oqpy7pDexQx2NCZq3uRt0vGEydeZmR6StS1n6DvkeFtStGukCxqo85xLhaUfS8OhlzsUuhLq2lZGHtkvelLI8yIWpsy9xH0FmLuErnv864w7x2o5WuZihA67sjSEzIpP9K_Ze4LYN6vATdsP_mLV__D3ZMoqESrtI6-s57KQ35uvoy-86o90FSiHtLrz-_3Q",
+      img: heroKriKrti,
       caption: "Autonomous tactical unmanned aerial vehicle equipped with real-time telemetry streaming, smart waypoint routing, and carbon-fiber composite architecture.",
       badge: "PROTOTYPE V7 // KRI & KRTI CLASS",
       specs: [
@@ -382,4 +391,4 @@ export const contentData = {
   },
 };
 
-export const LOGO_URL = "https://lh3.googleusercontent.com/aida-public/AB6AXuCIo-iKG-1PcA8yivJQOg4EP0cJNxFGV5BKK-byYGsHGa-1FCHSt3fPpccTJrcMS-A-8tb9F7vRtagpzqs1NvYa9F4n3mg7f82fZtYANal4fo7tY2EMJ4bYfGfSZVDQnwED0a0mgHOGDP5t2BNe7nUQU04G-crE5ZuLn4SzXDcx9OwoWofPdoIt2GAYElH3r8g7usSgeKVfwTpn_9mj0odv6y3dwVh1je-pxgFtUmPuwxD0_pvhcRQnZuOWH-fYNNpIwg";
+export const LOGO_URL = logo;
