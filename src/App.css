@@ -574,7 +574,7 @@
 .filmstrip-card {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 0;
   background-color: #121217;
   border: 1px solid var(--border-subtle);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
@@ -795,7 +795,7 @@
   position: relative;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 0;
   background-color: #121217;
   border: 1px solid var(--border-subtle);
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7);
@@ -961,7 +961,7 @@
   vertical-align: middle;
   width: 58px;
   height: 32px;
-  border-radius: 9999px;
+  border-radius: 0;
   overflow: hidden;
   border: 1.5px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
@@ -1220,7 +1220,7 @@
   aspect-ratio: 4 / 3;
   min-height: 280px;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 0;
   border: 1px solid var(--border-subtle);
   background-color: #121217;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
