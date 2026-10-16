@@ -1,16 +1,56 @@
-# React + Vite
+# Robotik Unnes
+Website resmi untuk Organisasi Mahasiswa yang bergerak di bidang Robotika.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Developer
+- Hilal Muzaki
+- Muhammad Rifqi Fajar Adi Putra
+- Fahri
 
-Currently, two official plugins are available:
+## Teknologi
+- React 19
+- Vite 8
+- CSS (CSS variables sebagai design token)
+- Google Fonts: Syne, Inter, JetBrains Mono
+- Oxlint
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Menjalankan Project
+```bash
+npm install
+npm run dev      # menjalankan dev server
+npm run build    # build produksi ke folder dist/
+npm run preview  # melihat hasil build
+npm run lint     # cek kode dengan oxlint
+```
 
-## React Compiler
+## Struktur Project
+```
+robotika-unnes/
+├── public/              -> aset statis (favicon, ikon)
+├── src/
+│   ├── assets/          -> gambar lokal
+│   ├── components/      -> komponen tiap section halaman
+│   ├── data/
+│   │   └── content.js   -> seluruh teks konten (Bahasa Indonesia & Inggris)
+│   ├── App.jsx          -> komponen utama, menyusun semua section
+│   ├── App.css          -> style tiap section
+│   ├── index.css        -> design system & style global
+│   └── main.jsx         -> entry point React
+├── index.html
+├── package.json
+└── vite.config.js
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Project Details
+- App.jsx -> menyimpan state bahasa (ID/EN) dan modal, lalu mengirim konten ke tiap section
+- data/content.js -> tempat mengubah teks website tanpa menyentuh komponen
+- components/Navbar.jsx -> navigasi utama (termasuk menu mobile)
+- components/Hero.jsx -> judul utama & galeri filmstrip
+- components/About.jsx -> tentang, visi & misi
+- components/TeamRibbon.jsx -> ribbon tim & slogan
+- components/Programs.jsx -> program kerja
+- components/HangarPrototype.jsx -> prototipe unggulan
+- components/Faq.jsx -> pertanyaan yang sering diajukan
+- components/Contact.jsx -> informasi kontak & formulir
+- components/Footer.jsx -> footer & media sosial
+- components/StatusOverlay.jsx -> pengganti bahasa EN/ID & jam
+- components/ProjectModal.jsx -> modal detail prototipe
